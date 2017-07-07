@@ -1,0 +1,41 @@
+message <<-MARKDOWN
+## 本教學假設...
+* 你已經做過了基本的 RailsBridge installfest 並成功通過了<a href="/installfest/get_a_sticker">拿貼紙</a>步驟。
+* 你已經通過了最少一次、也許幾次的 RailsBridge <a href="/intro-to-rails">Suggestotron 教學</a>還有 <a href="/job-board">Job Board 教學</a>，或是你因為某些原因對 Rails 感到自在。
+* 你想多了解 Rails！！！
+
+## 目標
+* 做些東西！
+* 理解 Rails app 的模型、視圖、控制器（model, view, controller）做什麼、還有它們如何共事。
+* 習慣把錯誤訊息當成指引，而不是因此不知所措。
+
+## 會發生什麼事？
+* 我們會建立一個留言版系統，首頁裡面有貼文、點選後還能看到原文以及下面的意見。
+* 我們會把這目標細分為以下挑戰：
+  * 挑戰一：建立個有靜態首頁的新 rails app
+  * 挑戰二：安裝 Devise
+  * 挑戰三：用 Bootstrap 變漂亮
+  * 挑戰四：寫個建立並閱覽單獨文章的頁面
+  * 挑戰五：寫個文章目錄頁
+  * 挑戰六：增加回覆
+  * 挑戰七：在文章內回覆
+  * 挑戰 ∞：其他你想要的功能
+
+* 每次給 app 實做功能後，在你增加任何功能前，把它提交到 Git！新功能可能會破壞做好的東西，你可能會想在需要時，回退到以前的版本。
+
+很重要的注意事項：<b>我們把章節挑戰取消了，因為它們很有挑戰性！</b>在這個教學和別人合作會是最有趣的：和你的教師、助教、其他學生們討論些東西。這和 Suggestotron 教學有很不同的風格，所以在你不知道接下來要幹嘛時別灰心。
+
+## 如何使用本教學
+* <b>挑戰</b>有著一堆要在時間內做完的東西。這些東西由要求鎖住——只要你（或你的團隊）完成要求，就去下一組挑戰吧。
+
+* <b>要求</b>在本教學並不全然與敏捷軟體開發法（agile software development methodology）的要求分離——應該在這程式內的東西，要由設計/決定此產品的人們決定。除此之外，我們還會出些非程式的要求，像是能和別人解釋概念。
+
+* <b>討論</b>由教師主導；this is the closest this curriculum gets to lecture teaching.
+
+* <b>提示</b>和他們聽到的<b>工具與參考</b>一樣。
+
+
+* 僅限教師：在 http://bit.ly/int-railsbridge-guide 裡面有些教學指引。
+MARKDOWN
+
+next_step "建立個有靜態首頁的新_rails_app"

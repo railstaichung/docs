@@ -1,0 +1,22 @@
+requirements do
+message <<-MARKDOWN
+* 用戶要在文章顯示頁面看到「新增回覆」的表單。
+* 用戶要能透過文章內的「新增回覆」表單直接回覆。
+* 在回覆單獨頁面的時候，錯誤處理（例如沒有內容的回覆）要還是要能運作。
+MARKDOWN
+img class: 'noborder', src: 'img/inline_reply.png'
+end
+
+discussion do
+message <<-MARKDOWN
+* 要允許頁內回覆的話，會需要觸發 posts 控制器的什麼呢？視圖又會發生什麼事？
+MARKDOWN
+end
+
+tools_and_references do
+message <<-MARKDOWN
+* RailsGuides - Form Helpers, section 2.2: <http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object>
+MARKDOWN
+end
+
+next_step '其他你想要的功能'

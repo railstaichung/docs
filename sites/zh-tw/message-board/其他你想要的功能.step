@@ -1,0 +1,23 @@
+message <<-MARKDOWN
+你還想要什麼功能嗎？
+
+建議:
+
+* 給用戶們的檔案（輸入用戶的名字或詳細資料，把它們放在貼文旁邊）
+* 用戶個人的貼文/留言歷史（放在用戶們的檔案頁如何？）
+* 使用 [Gravatar](https://gravatar.com/) 的簡易用戶大頭貼。
+* 使用 [Omniauth](https://github.com/intridea/omniauth) 增加登入選項，像是用 Twitter、Facebook、Github、Google...等帳號登入。
+  * 看看 Devise [和 Omniauth 整合的文件](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview)。
+* Fiddle with the layout of the show page so it doesn't look bad. If it looks bad. It probably looks great.
+* Perhaps fancier post markup with Markdown or something similar.
+* 佈署到 Heroku 並把你的 message board 告訴給你的朋友們！
+
+## ...就這樣！祝好運！做更多東西！再回來吧！
+
+# 製作群
+
+本教學的英文原版是 [Lillie Chilen](http://www.twitter.com/lilliealbert) 與 [Travis Grathwell](https://github.com/tjgrathwell) 合力完成，
+並由[可愛的 RailsBridge 志工們](https://github.com/railsbridge/docs/commits/master/sites/en/message-board)接力改進。<br/>
+中文翻譯由 [iigmir](https://developer.mozilla.org/zh-TW/profiles/iigmir) 完成。
+
+MARKDOWN

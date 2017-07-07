@@ -1,0 +1,59 @@
+requirements do
+message <<-MARKDOWN
+* 用戶要能建立有著標題、作者、發表日期、以及內容的主文章。作者應該是目前的用戶。
+* 完整的文章要能夠顯示在獨立的頁面（也就是 show 頁面）。
+* 如果用戶提交時沒有完成所有需要的欄位，要能看到失敗訊息，但不能失掉用戶的當前作業。
+MARKDOWN
+  table do
+    tr do
+      td do
+        h2 'Create View', class: 'centered'
+      end
+      td do
+        h2 'Show View', class: 'centered'
+      end
+    end
+    tr do
+      td do
+        img class: 'noborder', src: 'img/create_post.png'
+      end
+      td do
+        img class: 'noborder', src: 'img/show_post.png'
+      end
+    end
+  end
+end
+
+discussion do
+message <<-MARKDOWN
+* 如何建立資源？需要什麼參數來完成它呢？
+* 接著：rails 在你使用 resource 產生器的時候做了什麼？找出所有新檔案。可以的話把他們都寫在白板上。
+* 如何把登入用戶與文章相關連？
+  * 你要在建立文章的遷移檔裡面添加什麼？
+  * 要與 User 和 Post 模型溝通的襪，他們要如何相關連？
+  * 當你建立文章的時候，如何把用戶與文章相關連呢？
+* 控制器 posts 的 `new` 與 `create` 模型有什麼差異？它們又如何關聯，以便表單能建立新文章？
+MARKDOWN
+end
+
+tools_and_references do
+message <<-MARKDOWN
+* RailsGuides - Active Record Associations: <http://guides.rubyonrails.org/association_basics.html#the-belongs-to-association>.
+* RailsGuides - Form Helpers, section 2.2: <http://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object>.
+* RailsGuides - Routes - CRUD, Verbs, and Actions: <http://guides.rubyonrails.org/routing.html#crud-verbs-and-actions>.
+* RailsGuides - Active Record Validations: <http://guides.rubyonrails.org/active_record_validations.html>.
+* RailsGuides - Active Record Callbacks: <http://guides.rubyonrails.org/active_record_callbacks.html>.
+MARKDOWN
+end
+
+hints do
+message <<-MARKDOWN
+* Rails 為了組建了些東西以便讓很多模型能相關連。來看看前述的 RailsGuides 連結以獲取些如何令用戶擁有文章的提示。
+* 不要手刻表單！你不用這麼做！Rails 可以幫忙的！來看看前述的 RailsGuides 連結吧！
+* Rails 內建能在東西寫進資料庫的時候紀錄下。也許在顯示文章建立時間會很好用。
+* 現在，我們以用戶的 email 地址顯示文章作者。你可以之後再添加名字，或其他可辨別資訊！（另外，就算要從 User 模型抓到目前用戶的 email 地址，你還是要給 Post 資源一個 user 參數。）
+* 你需要 `create` 方法來儲存你的文章資料 - 在 Getting Started guide 裡面往下滾一點，會有些有用的提示：<http://guides.rubyonrails.org/getting_started.html#creating-new-posts>。
+MARKDOWN
+end
+
+next_step "寫個文章目錄頁"

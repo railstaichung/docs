@@ -1,0 +1,58 @@
+requirements do
+  message <<-MARKDOWN
+* 用 Bootstrap 讓網站看起來又潮又炫吧。
+* 登入以後，用戶的 email 地址要出現在導覽列的右上角。
+MARKDOWN
+  img class: 'noborder', src: 'img/header.png'
+end
+
+important do
+  h2 "給個期限！"
+  p "這個章節目的是讓你的 app 變得漂亮、並展示如何在 Gemfile 檔案添加像 Bootstrap 這樣的 CSS 框架。不要一直花時間在讓你的 CSS 完全正確，除非它對你而言非常非常重要。"
+end
+
+discussion do
+message <<-MARKDOWN
+* Chrome 開發者工具 / Firefox Firebug 套件 — 要怎麼用呢？
+* 什麼是 Bootstrap 而（選答）為什麼幾乎所有人都喜歡它（或最少，為什麼要在這裡用它）？
+* 可以看一下 home/index.html.erb 視圖檔，它和 layouts/application.html.erb 視圖檔相關連，你可能會想做些東西以發揮 Bootstrap 的優勢。
+* 誰來解釋一下 erb 如何做動 — 你會用它顯示用戶的 email 地址
+MARKDOWN
+end
+
+tools_and_references do
+message <<-MARKDOWN
+* Bootstrap 的 gem！！哪裡可以拿到呢？ https://github.com/twbs/bootstrap-sass
+* Bootstrap 文件： http://getbootstrap.com/css/
+* 連往 navbar 的章節： http://getbootstrap.com/components/#nav
+* HTML 與 CSS 的參考： http://www.htmldog.com/
+MARKDOWN
+end
+
+hints do
+message <<-MARKDOWN
+* 別忘了看 readme（讀我）！
+* 你可以用很 Bootstrap 的方法移動文字 — 看看文件的「Component alignment」吧。
+* Devise 有個訪問目前用戶的 helper 方法 — 去 Devise 的 readme 檔案找。
+MARKDOWN
+end
+
+h1 "超級大提示"
+message "如果你抓不到 Bootstrap nav bar 的 HTML 要訣、或只是想快點往下走，你可以在安裝 Bootstrap 後把下面的程式碼貼進 layout 裡面。程式碼要放在 &lt;body&gt; 標籤的下一行："
+pre <<-MARKDOWN
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Message Board</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+    </ul>
+    <p class="navbar-text pull-right">logged_in_user@email.com | <a href="log_out_link_here">Log Out</a></p>
+  </div>
+</div>
+MARKDOWN
+
+message "***你還是要實做用戶登入的資訊、並加上登出按鈕！***"
+
+next_step "寫個建立並閱覽單獨文章的頁面"

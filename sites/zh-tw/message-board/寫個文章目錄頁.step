@@ -1,0 +1,24 @@
+requirements do
+message <<-MARKDOWN
+* 用戶要能在總覽頁面（又稱首頁）看到每篇文章的名字、作者、發表日期。
+* 貼文名稱要能連到文章的顯示頁面。
+* 首頁要有「新文章」的連結或按鈕。
+MARKDOWN
+  img class: 'noborder', src: 'img/post_index.png'
+end
+
+discussion do
+message <<-MARKDOWN
+* 要找時間討論 Active Record 的話就是現在！誰來解釋下？
+MARKDOWN
+end
+
+tools_and_references do
+message <<-MARKDOWN
+* RailsGuides - Listing All Posts: http://guides.rubyonrails.org/v4.0/getting_started.html#listing-all-posts
+  * 如果你搞不懂 JSON 的東西，可以略過！
+* Bootstrap - 來排表格！ http://getbootstrap.com/css/#tables
+MARKDOWN
+end
+
+next_step "增加回覆"

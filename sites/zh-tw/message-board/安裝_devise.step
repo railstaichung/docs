@@ -1,0 +1,45 @@
+requirements do
+message <<-MARKDOWN
+* 用戶要能建立帳戶並登入。
+* 用戶要在尚未登入的時候見到登入提示。
+* 用戶登入後要能見到親切的問候。
+* 要能見到已登入用戶的 email 地址與登出連結。
+MARKDOWN
+end
+
+important do
+  h2 "給個期限！"
+  p "這章節的目的是為了讓用戶能在你的 app 登入，並展示如何用 Gemfile 添加像 Devise 這樣的外部函式庫。如果你發現自己需要寫上好幾行以實做的話，你就想得太多了。快和助教討論！"
+end
+
+discussion do
+message <<-MARKDOWN
+* 何謂 Devise？
+* Devise 在你的 rails app 添加了什麼檔案？
+* 誰來解釋下：如何解讀 `rake routes` 的輸出？它告訴了你什麼？它又能幫你作什麼？
+* 如何增加登出連結？DELETE 動作的語法為何？
+* 你要給你的 application layout 增加錯誤訊息。如果還沒，討論下 application layout 與你建立的其他視圖間有什麼關係。
+MARKDOWN
+end
+
+tools_and_references do
+message <<-MARKDOWN
+* Devise：授權的魔法！來這裡看看吧： https://github.com/plataformatec/devise
+ * 在 readme（讀我）裡面，滾到「Getting Started」（開始入門）這邊。你需要把它加到你的 gem 檔。如果忘了作法，問問你旁邊的人！
+ * 你可能不想直接輸入 Devise readme 的指令，而是想先看了整個章節再說（例如說，不要略過 bundle！）
+MARKDOWN
+end
+
+hints do
+message <<-MARKDOWN
+* Readme 檔是你的摯友！愛用他們喔！
+* 模型的命名慣例是首字母大寫，例如：User。
+* 當你輸入 `rails generate devise:install` 後，你會收到五個指引。三或四也行。
+* 路由檔的註解有很多常見路由類型的說明。他們也是你的摯友喔。
+* Devise 有些能幫你完成登出連結的魔法。執行 `rake routes` 來看看有什麼能用的路徑吧。
+* 你可能想在用戶登入時，才秀出他們的 email 地址吧？Devise 有個 helper 能完成。
+* 選填：每次在生產 rails 的模型時，你可以用終端機看看模型的方法和互動的行為。
+MARKDOWN
+end
+
+next_step "用_Bootstrap_變漂亮"

@@ -1,0 +1,35 @@
+requirements do
+message <<-MARKDOWN
+* 你應該要有個 rails app，裡面有你自行控制的靜態首頁。確認這頁的控制器叫做 **HomeController**。
+* 身為開發者，你要和教師、助教、或同學們解釋 Rails 如何知道要渲染你的 home 視圖。
+MARKDOWN
+  img class: 'noborder', src: 'img/static_home_page.png'
+end
+
+discussion do
+message <<-MARKDOWN
+* 為了要有一個靜態頁面，你需要個一個路由、一個控制器、一個視圖。討論一下！
+  * 講真的，若沒去討論的話，事情會變得很、棘、手。
+* 產生器（Generator）！Rails 有一大堆的產生器。試著瀏覽一下 `rails generate` 的輸出。
+* 這個教學不會用到 `rails generate scaffold`。這是因為你要生產自己的模型、視圖、控制器。這會迫使你去理解組建（understanding-building）。教師/助教也許能出於理解上的原因，講講在真實世界他們會怎麼做、還有這份選擇的好處。
+* 做出了自己的 home 控制器以後，需要加什麼東西，才能做出靜態首頁？
+* home/index.html.erb 視圖檔如何與 layouts/application.html.erb 視圖檔互動？
+* 在 application view 裡面，yield 的意義何在？
+* home 控制器在做什麼？
+MARKDOWN
+end
+
+tools_and_references do
+message <<-MARKDOWN
+* RailsGuides - Setting the Application Home Page: <http://guides.rubyonrails.org/getting_started.html#setting-the-application-home-page>.
+* RailsGuides - controllers overview: <http://guides.rubyonrails.org/action_controller_overview.html>.
+MARKDOWN
+end
+
+hints do
+message <<-MARKDOWN
+* 如果對於要在 home 控制器加什麼毫無頭緒的話，也許可以看之前的 Railsbridge app？或你其他的 lying rails app？
+MARKDOWN
+end
+
+next_step "安裝_devise"

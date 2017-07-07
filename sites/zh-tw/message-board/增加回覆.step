@@ -1,0 +1,42 @@
+requirements do
+message <<-MARKDOWN
+* 用戶要能在文章的的顯示頁面，看到會導引到表單的「新回覆」連結或按鈕。表單該有個要回覆的文章標題。
+* 用戶要能用「新回覆」表單建立新的回覆或文章。
+* 用戶要能在文章的的顯示頁面看到所有回覆。
+* 如果用戶沒提交所有需要的欄位，就要看見錯誤訊息，但不要流失掉任何工作。
+MARKDOWN
+  table do
+    tr do
+      td do
+        h2 'Create View', class: 'centered'
+      end
+      td do
+        h2 'Show View', class: 'centered'
+      end
+    end
+    tr do
+      td do
+        img class: 'noborder', src: 'img/create_reply.png'
+      end
+      td do
+        img class: 'noborder', src: 'img/show_replies.png'
+      end
+    end
+  end
+end
+
+discussion do
+message <<-MARKDOWN
+* 何謂巢狀資源（nested resource）？何時合適、又如何幫助我們？
+* `RepliesController` 與 `PostsController` 要如何相互作用？
+* 要讓這讓巢狀事務（nesting business）運作的話，路由檔該發生什麼事？
+MARKDOWN
+end
+
+tools_and_references do
+message <<-MARKDOWN
+* RailsGuides - Rails Routing from the Outside In http://guides.rubyonrails.org/routing.html
+MARKDOWN
+end
+
+next_step "在文章內回覆"
